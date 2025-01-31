@@ -10,6 +10,7 @@ public class PCGWATER : MonoBehaviour
     public float gridSpacing = 1f;
     public float smoothness = 1f;
     public Vector2 wind;
+    public float windSpeed;
     public Material material;
 
     [Header("Perlin Noise Wave Settings")]
@@ -25,10 +26,9 @@ public class PCGWATER : MonoBehaviour
     void Start()
     {
         GenerateWaterMesh();
-        material.SetFloat("GridWidth", gridSizeX / gridRes);
-        material.SetFloat("GridHeight", gridSizeZ / gridRes);
+        //material.SetFloat("GridWidth", gridSizeX / gridRes);
+        //material.SetFloat("GridHeight", gridSizeZ / gridRes);
         this.GetComponent<MeshRenderer>().material = material;
-        this.GetComponent<MeshCollider>().sharedMesh = mesh;
     }
 
     void Update()
@@ -100,6 +100,7 @@ public class PCGWATER : MonoBehaviour
         mat.SetFloat("_Smoothness", smoothness);
         mat.SetFloat("_dx", wind.x);
         mat.SetFloat("_dy", wind.y);
+        mat.SetFloat("_WindSpeed", windSpeed);
         return;
         if (vertices == null) return;
 

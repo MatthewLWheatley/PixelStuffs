@@ -155,10 +155,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridSizeX: 100
   gridSizeZ: 100
-  gridRes: 1
+  gridRes: 10
   gridSpacing: 1
   smoothness: 1
   wind: {x: 1, y: 1}
+  windSpeed: 0
   material: {fileID: 2100000, guid: 47ab32d3c2ff3fe4caff1dc4b419a748, type: 2}
   waveSpeed: 1
   waveHeight: 1
@@ -222,7 +223,7 @@ Transform:
   m_GameObject: {fileID: 470709631}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.19, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

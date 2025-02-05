@@ -3,7 +3,10 @@ guid: 76ade88ada45c044c961d1ee46ed749f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerTransform: {instanceID: 0}
+  - riverMaterial: {fileID: 2100000, guid: 47ab32d3c2ff3fe4caff1dc4b419a748, type: 2}
+  - closestSegment: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

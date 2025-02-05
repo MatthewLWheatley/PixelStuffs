@@ -24,8 +24,9 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -79,6 +80,14 @@ Material:
         m_Texture: {fileID: 8400000, guid: f5764cf80193cd4489b59d980833bb24, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _screenDepth:
+        m_Texture: {fileID: 8400000, guid: 7bbac531436add94586b47df9f615afa, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _screenPixelDepth:
+        m_Texture: {fileID: 8400000, guid: eaa85ef1ccead754b9f60456aaa33e0e, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -109,10 +118,13 @@ Material:
     - _CRT_SCREEN_BEND: 1
     - _CRT_STATIC: 1
     - _CRT_STATIC_SCROLLING: 1
+    - _CastShadows: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
+    - _Density: 1
+    - _Depth: 0.6
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DistortionStrength: 0
@@ -140,13 +152,16 @@ Material:
     - _StaticStrength: 0
     - _Surface: 0
     - _WorkflowMode: 1
+    - _ZTest: 4
     - _ZWrite: 1
+    - _ZWriteControl: 1
     - _shift: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _CRTWarpStrength: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FogCollder: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &7225948589626598489

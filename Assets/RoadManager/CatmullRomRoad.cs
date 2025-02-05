@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using System.Collections.Concurrent;
 
 
-
 public class RoadGeneratorCatmull : MonoBehaviour
 {
     [Header("References")]
